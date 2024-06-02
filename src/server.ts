@@ -13,7 +13,7 @@ app.use(express.json());
 const PORT = process.env.PORT || 3000;
 const MONGODB_URI = process.env.MONGODB_URI;
 const DB_NAME = process.env.DB_NAME;
-const mongoURI = `${MONGODB_URI}/${DB_NAME}`;
+const mongoURI = `mongodb+srv://saransh2196:rOiI9ZtT3VNTqt2N@todo-jwt-api.vgkhbqd.mongodb.net/?retryWrites=true&w=majority&appName=todo-jwt-api`;
 
 //mongodb connection
 mongoose.connect(mongoURI);
